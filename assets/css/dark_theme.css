@@ -1,0 +1,93 @@
+/* DARK THEME */
+
+body.dark-theme {
+    --background: #171717;
+    --background-light: #212121;
+    --background-lightest: #28272C;
+    --background-dark: #111111;;
+    --font-color: #F7f6f2;
+    --font-color-light: #b9b9b9;
+    --font-color-lightest: #fbfbfb;
+}
+
+/* main */
+
+.dark-theme ::selection {
+    background: #A5EDC4;
+    color: var(--background);
+}
+
+.dark-theme ::-webkit-scrollbar{
+    width: .6rem;
+    background-color: var(--background-dark);
+}
+
+.dark-theme .navbar-link{
+    color: var(--font-color-light);
+    font-weight: 500;
+    transition: var(--transition-1);
+}
+
+.dark-theme .copyright a:hover{ 
+    color: var(--background);
+    background-color: #A5EDC4;
+}
+
+.dark-theme .text span { color: var(--background);}
+
+/* projects */
+
+.dark-theme .projects .projects-box {
+    background: var(--background);
+    border: 2px solid #111111;
+}
+
+.dark-theme .projects .projects-box img {
+    border: 2px solid #111111;
+}
+
+/* about */
+
+.dark-theme .cards .card {
+    background: var(--background);
+    border: 2px solid #111111;
+}
+
+.dark-theme .cards .card .imgBx img{
+    border: 2px solid #111111;
+}
+
+/* Cards */
+  
+.dark-theme .card-icon {
+    background-color: var(--background);
+    border: 2px solid #111111;
+    border-radius: 4px;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding: 0.25em 0.5em; 
+    transition: all .3s;
+}
+
+.dark-theme .info-container .info-box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--background-light);
+    border: 2px solid #111111;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    border-radius: 4px;
+}
+
+.dark-theme .info-container .info-box:hover{
+    border: 2px solid var(--primary-color);
+    transition: .5s;
+}
+
+.dark-theme .portfolio-card .card-banner img{
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    border: 2px solid #111111;
+}
+

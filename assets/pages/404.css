@@ -1,0 +1,97 @@
+/* body {
+  background-color: #171717;
+} */
+
+.wrapper-1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-2{
+  padding: 30px;
+  text-align:center;
+}
+
+.wrapper-2 img {
+    width: 300px;
+    height: 400px;
+}
+
+/* float */ 
+
+.float {
+  animation-name: float;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(10px);
+  }
+}
+
+/* float - End */
+
+h1{
+  font-family: var(--body-font);
+  font-size: 130px;
+  font-weight: bold;
+  letter-spacing: -6px;
+  color: var(--font-color);
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom:40px;
+}
+
+.wrapper-2 p{
+  margin:0;
+  font-size: 1.2em;
+  font-style: italic;
+  color: var(--font-color);
+  font-family: var(--body-font);
+  letter-spacing:1px;
+  line-height: 1.5;
+}
+
+.text a{
+  color: var(--font-color);
+  font-weight: var(--font-semibold);
+  transition: 0.3s;
+}
+
+.text a:hover{
+  color: var(--font-color);
+  background-color: #A5EDC4;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+@media (min-width:360px){
+
+  h1{
+    font-size:4.5em;
+  }
+
+}
+
+@media (min-width:600px){
+
+  .thankyoucontent{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  }
+  
+  
+}
