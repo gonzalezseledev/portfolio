@@ -16,7 +16,10 @@
     letter-spacing: 1px;
 }
 
-.about-content .title span{ font-weight: 600; }
+.about-content .title span{ 
+  font-size: 3rem;
+  font-weight: 600; 
+}
 
 .hero .section-text:last-of-type { margin-block: 30px; }
 
@@ -45,7 +48,7 @@
 }
 
 .tab-btn .active{ 
-  color: teal;
+  color: var(--primary-color);
 }
 
 .tab-text {
@@ -146,11 +149,12 @@
 }
 
 .card-icon {
-  background-color: var(--background-light);
-  border: 2px solid var(--font-color);
-  box-shadow: 4px 4px 0px var(--font-color);
+  background-color: var(--background-card);
+  border-radius: 4px;
+  border: 1px solid var(--background-light);
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
   padding: 0.25em 0.5em; 
-  transition: .5s;
+  transition: all .3s;
 }
 
 .card-icon:is(:hover, :focus-visible) {box-shadow: none;}
@@ -231,14 +235,15 @@
   position: relative;
   width: 300px;
   height: 250px;
-  background: var(--background-light);
+  background: var(--background-card);
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid var(--background-light);
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
   transition: 0.3s ease-in-out;
-  border: 2px solid var(--font-color);
 }
 
 .cards .card:hover {
@@ -257,7 +262,7 @@
 
 .cards .card .imgBx img {
   max-width: 100%;
-  border: 2px solid var(--font-color);
+  border: 2px solid #111111;
 }
 
 .cards .card .content {

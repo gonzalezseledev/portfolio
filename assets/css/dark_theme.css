@@ -13,7 +13,7 @@ body.dark-theme {
 /* main */
 
 .dark-theme ::selection {
-    background: #A5EDC4;
+    background: #5ec4c8;
     color: var(--background);
 }
 
@@ -30,7 +30,7 @@ body.dark-theme {
 
 .dark-theme .copyright a:hover{ 
     color: var(--background);
-    background-color: #A5EDC4;
+    background-color: #5ec4c8;
 }
 
 .dark-theme .text span { color: var(--background);}

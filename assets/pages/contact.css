@@ -1,7 +1,7 @@
 .contact{
     width: 100%;
     overflow: hidden;
-    background-color: #F7f6f2;
+    background-color: var(--background);
 }
 
 .contact .contact__container{
@@ -31,8 +31,8 @@
 
 .contact__heading h1{
     font-weight: var(--font-semibold);
-    color: #232323;
-    font-size: 2.5rem;
+    color: var(--font-color);
+    font-size: 3rem;
     line-height: 0.9;
     white-space: nowrap;
     margin-bottom: 1.2rem;
@@ -40,25 +40,27 @@
 }
 
 .contact__heading span{
-    font-weight: var(--font-semibold);
+    color: var(--font-color-light);
+    font-weight: var(--font-medium);
 }
 
 .text{
-    color: #232323;
+    color: var(--font-color);
     line-height: 1.1;
     font-size: var(--h3-font-size);
     text-align: justify;
 }
 
 .text a{
-    color: #232323;
-    font-weight: var(--font-semibold);
+    color: var(--primary-color);
+    font-weight: var(--font-medium);
     transition: 0.3s;
     text-decoration: none;
 }
 
 .text a:hover{
-    background-color: #A5EDC4;
+    color: var(--background);
+    background-color: var(--primary-color);
     transition: 0.3s;
 }
 
@@ -84,19 +86,16 @@
 
 .contact__input{
     width: 100%;
-    background-color: #F7f6f2;
+    background-color: var(--background-card);
     padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
     outline: none;
     font-family: var(--body-font);
-    color:#232323;
+    color:var(--font-color-light);
     font-size: 0.95rem;
-    border: 2px solid #232323;
+    border-radius: 4px;
+    border: 1px solid var(--background-light);
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
     transition: 0.3s;
-}
-
-.contact__input:hover{
-    background-color: #EDEDE5; 
-    /* color hover inputs */
 }
 
 .input__wrap label{
@@ -104,7 +103,7 @@
     top: 50%;
     left: calc(1.35rem + 2px);
     transform: translateY(-50%);
-    color: #202022;
+    color: var(--font-color-light);
     pointer-events: none;
     transition: .25s;
 }
@@ -115,7 +114,7 @@
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    color: #202022;
+    color: var(--font-color-light);
     font-size: var(--h2-font-size);
     transition: .3s;
 }
@@ -137,17 +136,17 @@ textarea.contact__input ~ .icon{
 }
 
 .input__wrap.focus .contact__input{
-    background-color: #F7f6f2;
-    border: 2px solid #232323;
+    background-color: var(--background-card);
+    border: 2px solid #111111;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
 }
 
 .input__wrap.focus label{
-    color: #202022;
+    color: var(--font-color);
 }
 
 .input__wrap.focus .icon{
-    color: #202022;
+    color: var(--font-color);
 }
 
 .input__wrap.not-empty label{
@@ -157,11 +156,13 @@ textarea.contact__input ~ .icon{
 }
 
 .input-btn{
+    color: var(--background);
     display: inline-block;
     padding: 1.1rem 2rem;
-    color: #232323;
-    border: 2px solid #232323;
-    background-color: #F7f6f2;
+    border-radius: 4px;
+    border: 1px solid var(--background-light);
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    background-color: var(--primary-color);
     font-weight: var(--font-medium);
     font-size: var(--h3-font-size);
     cursor: pointer;
@@ -169,8 +170,8 @@ textarea.contact__input ~ .icon{
 }
 
 .input-btn:hover{
-    color: #F7f6f2;
-    background-color: #232323;
+    color: var(--font-color);
+    background-color: var(--background-card);
 }
 
 .right{
@@ -198,7 +199,7 @@ textarea.contact__input ~ .icon{
     height: 100%;
     top: 0;
     right: 100%;
-    background-color: #F7f6f2;
+    background-color: var(--background);
 }
 
 .wave__wrap svg{
@@ -210,7 +211,7 @@ textarea.contact__input ~ .icon{
 }
 
 #wave{
-    fill: #F7f6f2;
+    fill: var(--background);
     height: 100%;
 }
 
@@ -225,7 +226,7 @@ textarea.contact__input ~ .icon{
 
 #dashed-wave{
     fill: none;
-    stroke: #232323;
+    stroke: var(--primary-color);
     stroke-width: 1px;
     stroke-dasharray: 6.5;
     opacity: 0.8;

@@ -4,21 +4,20 @@
 
 /* font-family: 'Syne', sans-serif; */
 
-/* COMPONENTS */
-
-@import url("../css/dark_theme.css");
-
 /* VARIABLES CSS */
 
 :root{
 
 /* colors */
 
---primary-color: #439E7E;
---background: #F7f6f2;
---background-light: #EDEDE5;
---font-color: #232323;
---font-color-light: #777;
+--primary-color: #5EC4C8;
+--background: #11171e;
+--background-light: #212121;
+--background-lightest: #28272C;
+--background-card: #161b22;
+--font-color: #e5e5e5;
+--font-color-light: #b9b9b9;
+--font-color-lightest: #fbfbfb;
 
 /* Fonts and typography */
 
@@ -131,8 +130,8 @@ span { color: var(--font-color);}
 }
 
 ::selection {
-    background: #A5EDC4;
-    color: var(--font-color);
+  background: #5ec4c8;
+  color: var(--background);
 }
 
 /* REUSABLE CSS CLASSES */
@@ -206,12 +205,9 @@ span { color: var(--font-color);}
 
 /* SCROLLBAR */
 
-
-/* MEJORAR */
-
 ::-webkit-scrollbar{
-    width: .6rem;
-    background-color: var(--background-light);
+  width: .6rem;
+  background-color: var(--background-dark);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -231,7 +227,7 @@ span { color: var(--font-color);}
     top: 0;
     display: grid;
     place-content: center;
-    background-color: var(--font-color);
+    background-color: var(--background);
     z-index: 999;
     transition: all 1s 1s ease-out;
     opacity: 1;
@@ -240,7 +236,7 @@ span { color: var(--font-color);}
 #svg {
     height: 150px;
     width: 150px;
-    stroke: var(--background);
+    stroke: var(--font-color);
     fill-opacity: 0;
     stroke-width: 3px;
     stroke-dasharray: 4500;
@@ -297,7 +293,8 @@ span { color: var(--font-color);}
 }
 
 .logo:hover { 
-  color: var(--font-color-light);}
+  color: var(--font-color-light);
+}
 
 .nav-open-btn{
   font-size: 2rem;
@@ -310,8 +307,8 @@ span { color: var(--font-color);}
   position: fixed;
   top: 0;
   left: -300px;
-  background-color: var(--font-color);
-  color: var(--background);
+  background-color: var(--background);
+  color: var(--font-color);
   max-width: 300px;
   width: 100%;
   height: 100vh;
@@ -337,7 +334,7 @@ span { color: var(--font-color);}
 }
 
 .nav-close-btn {
-  color: var(--background);
+  color: var(--font-color);
   font-size: 2rem;
   padding: 6px;
   transition: var(--transition-1);
@@ -347,11 +344,17 @@ span { color: var(--font-color);}
 
 .nav-close-btn:is(:hover, :focus-visible) { color: var(--primary-color); }
 
-.navbar-link {
-  padding-block: 10px;
+.navbar-list { margin-block-end: auto; }
+
+.navbar-list :hover {
+  color: var(--font-color-lightest);
 }
 
-.navbar-list { margin-block-end: auto; }
+.navbar-link {
+  color: var(--font-color-light);
+  font-weight: 500;
+  transition: var(--transition-1);
+}
 
 .contact-link { transition: var(--transition-1); }
 
@@ -367,8 +370,10 @@ span { color: var(--font-color);}
   font-size: 1.3rem;
   transition: .5s;
 }
-
-.social-link:is(:hover, :focus-visible) { color: var(--primary-color); }
+ 
+.social-link:is(:hover, :focus-visible) { 
+  color: var(--primary-color); 
+}
 
 .overlay {
   position: fixed;
@@ -401,13 +406,13 @@ span { color: var(--font-color);}
 .footer-menu, .copyright {
     display: block;
     margin-top: 1rem;
-    color: var(--font-color);
+    color: var(--font-color-light);
     text-align: center;
     font-size: 1rem;
 }
 
 .link.footer-link {
-    color: var(--font-color);
+    color: var(--font-color-light);
     margin-top: 1rem;
     text-align: center;
     letter-spacing: -.5px;
@@ -415,28 +420,32 @@ span { color: var(--font-color);}
     padding: 4px 12px;
     font-family: var(--body-font);
     font-size: 1rem;
-    font-weight: 500;
 }
 
 .link.footer-link:hover {
-    background-color: var(--background-light);
+    background-color: var(--background-card);
     border-radius: 20px;
 }
 
 .footer-menu a{
     color: var(--primary-color);
-    font-weight: var(--font-semibold);
+    font-weight: var(--font-medium);
     transition: .4s;
 }
 
 .copyright a{
-    color: var(--font-color);
-    font-weight: var(--font-semibold);
+    color: var(--primary-color);
+    font-weight: var(--font-medium);
     transition: .4s;
 }
 
-.copyright a:hover{ background-color: #A5EDC4;}
+.copyright a:hover{ 
+  color: var(--background);
+  background-color: #5ec4c8;
+  opacity: 1;
+}
 
+.text span { color: var(--background);}
 
 /* MEDIAQUERIES */
 
