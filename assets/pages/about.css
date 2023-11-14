@@ -29,6 +29,10 @@
 
 /* SKILLS */
 
+.section-title span {
+  color: var(--primary-color);
+}
+
 .skills {
   background-color: var(--background-card);
   padding: 2.5rem 0;

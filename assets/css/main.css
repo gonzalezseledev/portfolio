@@ -15,7 +15,7 @@
 --background-light: #212121;
 --background-lightest: #28272C;
 --background-card: #161b22;
---font-color: #e5e5e5;
+--font-color: #f6f8fa;
 --font-color-light: #b9b9b9;
 --font-color-lightest: #fbfbfb;
 
@@ -35,29 +35,29 @@
 --font-semibold: 600;
 --font-bold: 800;
 
-  /* Spacing */
+/* Spacing */
 
-  --section-padding: 50px;
+--section-padding: 50px;
 
 /* Shadow */
 
 --shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
 
-  /* Border Radius */
+/* Border Radius */
 
-  --radius-circle: 50%;
-  --radius-pill: 100px;
-  --radius-8: 8px;
-  --radius-6: 6px;
+--radius-circle: 50%;
+--radius-pill: 100px;
+--radius-8: 8px;
+--radius-6: 6px;
 
 /* Transitions */
 
-  --transition-1: 0.25s ease;
-  --transition-2: 0.5s ease;
-  --transition-3: 0.3s ease-in-out;
+--transition-1: 0.25s ease;
+--transition-2: 0.5s ease;
+--transition-3: 0.3s ease-in-out;
 
-  --motion-duration-short-1: 100ms;
-  --motion-easing-linear: cubic-bezier(0, 0, 1, 1);
+--motion-duration-short-1: 100ms;
+--motion-easing-linear: cubic-bezier(0, 0, 1, 1);
 
 }
 
@@ -206,15 +206,15 @@ span { color: var(--font-color);}
 
 ::-webkit-scrollbar{
   width: .6rem;
-  background-color: var(--background-dark);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--primary-color);
+    background-color: #319396;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: var(--primary-color);
+    background-color: #319396;
 }
 
 /* LOADER */
