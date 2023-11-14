@@ -8,10 +8,7 @@
   <link rel="apple-touch-icon" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon//favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon//favicon-16x16.png">
-
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon//favicon-16x16.png">        
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/pages/about.css">
   
@@ -24,33 +21,25 @@
 
   <header class="header" data-header>
         <div class="container">
-    
-            <a href="portfolio.html" class="logo">
+            <a href="home.html" class="logo">
                 gonzalezsele.dev
             </a>
-    
             <nav class="navbar" data-navbar>
-    
                 <div class="navbar-top">
-                    <a href="portfolio.html" class="logo">
+                    <a href="home.html" class="logo">
                         gonzalezsele.dev
                     </a>
-    
                     <button class="nav-close-btn" aria-label="close-menu" data-nav-toggler>
                         <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                     </button>
                 </div>
-    
                 <ul class="navbar-list">
-    
                     <li>
                         <a href="portfolio.html" class="navbar-link">Proyectos</a>
                     </li>
-    
                     <li>
                         <a href="about.html" class="navbar-link active">About</a>
                     </li>
-    
                     <li>
                         <a href="contact.html" class="navbar-link">Contacto</a>
                     </li>
@@ -58,13 +47,11 @@
                       <a download="" href="./assets/pdf/resume.pdf" class="navbar-link">Curriculum</a>
                     </li>
                 </ul>
-    
                 <div class="wrapper">
                     <a href="mailto:gonzalezseledev@gmail.com" class="contact-link">
                         gonzalezseledev@gmail.com
                     </a>
                 </div>
-    
                 <ul class="social-list">
                     <li>
                         <a href="https://www.linkedin.com/in/gonzalezseledev/" class="social-link" target="_blank">
@@ -76,16 +63,12 @@
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
                     </li>
-    
                 </ul>
             </nav>
-    
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
             </button>
-    
             <div class="overlay" data-nav-toggler data-overlay></div>
-    
         </div>
   </header>
 
@@ -94,385 +77,247 @@
         <!-- HERO SECTION -->
         <section class="section hero" aria-label="about">
             <div class="hero-container">
-    
               <div class="about-content">
-
                 <p class="subtitle">👋 ¡Hola, mundo!</p>
                 <h2 class="title">
                     Mi nombre es 
                     <br>
                     <span>SELENE GONZÁLEZ</span>
                 </h2>
-    
                 <p class="section-text">
-                    Una desarrolladora, con <span> habilidades de resolución de problemas y experiencia en el desarrollo de aplicaciones web</span>, <span>cuidando siempre la estética y la experiencia de usuario (UI/UX)</span>.
+                    Una <span>Full Stack Developer</span> a la que le encanta <span>aprender cosas nuevas, la cultura coreana 🌺, los teclados mecánicos ⌨️, las novelas de ciencia ficción 🪐, y los gifs de gatos 🐱.</span>
                     <br><br>
                     <span>Uso mi lado creativo para diseñar y mi lado lógico para codificar</span>, por lo que paso los días (y a menudo muchas noches), convirtiendo líneas infinitas de código, en <span>experiencias de usuario intuitivas y adaptables</span>. 
                     <br><br>
-                    <span>Busco un equipo valiente con el que pueda crear un impacto duradero y significativo en la vida de las personas, la sociedad y el mundo en el que vivimos</span>.
+                    <span>Mi pasión por el código</span> <em>(yo no lo elegí a él, él me eligió a mí)</em>, <span>me ha llevado a aprender diferentes lenguajes de programación</span>, y en un interesante giro de los acontecimientos... <span>Python 🐍 llegó a mi vida</span>, <em>(me pilló tan de sopetón que me enamoré del susto 💚)</em>. 
                     <br><br>
-                    Si estás buscando una profesional proactiva y dedicada, ¡cuenta conmigo!
+                    <span>Soy una persona alegre y curiosa, que busca un equipo valiente con el que pueda potenciar mis conocimientos y habilidades profesionales, creando un impacto duradero y significativo en la vida de las personas, la sociedad y el mundo en el que vivimos. </span>.
+                    <br><br>
+                    <span>Si estás buscando una profesional proactiva y dedicada, que viva los lunes como si fueran viernes, ¡cuenta conmigo!</span>
                 </p>
-    
               </div>
-    
               <figure class="about-banner">
                 <a href="./assets/images/about-banner.png" target="_blank">
                 <img src="./assets/images/about-banner.png" width="1246" height="1326" loading="lazy" alt="about-banner" class="w-100">
                 </a>
               </figure>
-    
             </div>
         </section>
 
-        <!-- PRIMARY TABS -->
-        <div class="primary-tabs">
-
-            <button class="tab-btn active" data-tab-btn="resume">
-                <span class="tab-text">Curriculum</span>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button class="tab-btn" data-tab-btn="skills">
-                <span class="tab-text">Tech Stack</span>
-
-                <div class="state-layer"></div>
-            </button>
-
-            <button class="tab-btn" data-tab-btn="extra">
-                <span class="tab-text">Extra</span>
-
-                <div class="state-layer"></div>
-            </button>
-
-        </div>
-
-        <!-- CONTENT TABS -->
-
-        <section class="section tab-content resume-tab active" data-tab-content="resume">
-
-            <div class="resume">
-
-                <ul class="list">
-                    <h2 class="title-small">Experiencia</h2>
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">Full Stack Developer</p>
-                            <span class="label-medium card-subtitle">
-                                Asphalt Automotive | Enero - Actual
-                            </span>
-                            <span class="body-medium card-text">
-                                Desarrollo de software de gestión de un taller de mecánica general. 
-                                <br><br>
-                                · Sistema de control de versiones con Git y Sourcetree.
-                                Análisis de modelo de datos con MySQL.
-                                <br><br>
-                                · Arquitectura FRONT END con Angular, HTML, CSS, Typescript y Bootstrap. 
-                                <br><br>
-                                · Diseño y desarrollo de la ruta del BACK END con Express, NodeJS y JavaScript
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">Frontend Developer</p>
-                            <span class="label-medium card-subtitle">
-                                Rovers Burgers Responsive Website | Enero - Actual
-                            </span>
-                            <span class="body-medium card-text">
-                                Desarrollo de sitio web responsive con menú hamburguesa. 
-                                <br><br>
-                                · Sistema de control de versiones con Git y Sourcetree.
-                                <br><br>
-                                · Arquitectura FRONT END con HTML, CSS y JavaScript. 
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">Recepcionista de Hotel</p>
-                            <span class="label-medium card-subtitle">
-                                Hotel Jazmín S.L. | Enero 2009 - Diciembre 2022
-                            </span>
-                            <span class="body-medium card-text">
-                                Durante más de 10 años, lideré un equipo de 2 a 5 personas, consiguiendomantener un ambiente de trabajo propicio para favorecer la mejor experienciapara el cliente, logrando incrementar las ventas de servicios del Hotel.
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="list">
-                    <h2 class="title-small">Formación</h2>
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">
-                                Programación en lenguajes estructurados de aplicaciones de gestión
-                            </p>
-                            <span class="label-medium card-subtitle">
-                                IECM-Colon | 630h | Octubre 2023 - Actual
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">Full Stack Web Developer</p>
-                            <span class="label-medium card-subtitle">
-                                ID Bootcamps | 450h | 2023
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">
-                                Piscine Web Discovery Women’s Edition
-                            </p>
-                            <span class="label-medium card-subtitle">
-                                42 Madrid | Mayo - Junio 2023
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <p class="body-large">
-                                Técnico de sonido
-                            </p>
-                            <span class="label-medium card-subtitle">
-                                Master Radio Televisión | 665h | 2002
-                            </span>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <ul class="list">
-                    <h2 class="title-small">3 puntos clave</h2>
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <span class="body-medium card-text">
-                                <span>✦</span> Opino que <span>el código que escribimos no solo tiene que ser fácil de modificar, testear y escalar, sino que debe ser fácil de leer de forma natural</span>.
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <span class="body-medium card-text">
-                                <span>✦</span> Soy una apasionada de <span>la accesibilidad web</span> y <span>el diseño responsive</span>, por lo que estoy mejorando mis competencias en <span>Sass</span> y <span>Tailwind</span>.
-                            </span>
-                        </div>
-                    </li>
-
-                    <li class="resume-item">
-                        <div class="resume-card">
-                            <span class="body-medium card-text">
-                                <span>✦</span> Me encanta la cooperación y el trabajo en equipo. Por lo que me gustaría comenzar a <span>contribuir en proyectos de código abierto</span> para <span>generar y aportar valor para la comunidad web.
-                                <br><br>
-                                ¡No dudes en escribirme si tienes algún proyecto open source en el que pudiera colaborar! ¡Estaría más que encantada de hacerlo!</span>.
-                            </span>
-                        </div>
-                    </li>
-                </ul>
+        <!-- SKILLS -->
+        <section class="section skills">
+            <div class="skills-bg">
+            <div class="skills-content container grid">
+              <!-- <p class="section-subtitle">Hard Skills</p> -->
+              <h2 class="h2 section-title">
+                Desarrollo aplicaciones increíbles, para proyectos increíbles, con las siguientes tecnologías
+              </h2>          
+              <div class="skills-toggle" data-toggle-box>
+                <div class="toggle-btn active" data-toggle-btn>Skills</div>
+                <div class="toggle-btn" data-toggle-btn>Tools</div>
+              </div>
             </div>
-
-        </section>
-
-        <section class="section tab-content resume-tab" data-tab-content="skills">
-            <div class="expe">
-                <div class="skills-box" data-skills-box>
-                <ul class="skills-list">
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">HTML5</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/html.png" alt="HTML logo">
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">CSS3</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/css.png" alt="CSS3 logo">
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">JavaScript ES6</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/js.png" alt="JavaScript ES6 logo">
-                            </div>
-                        </div>
-                    </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Angular</div>
-                        <div class="card-icon">
-                        <img src="assets/images/languages/angular.png" alt="Angular logo">
-                        </div>
+            <div class="skills-box" data-skills-box>
+              <ul class="skills-list">
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">HTML5</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/html.png" alt="HTML5 logo">
                     </div>
-                    </li>
+                  </div>
+                </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">React</div>
-                        <div class="card-icon learn">
-                        <img src="assets/images/languages/react.png" alt="React logo">
-                        </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">CSS3</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/css.png" alt="CSS3 logo">
                     </div>
-                    </li>
+                  </div>
+                </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Sass</div>
-                        <div class="card-icon learn">
-                        <img src="assets/images/languages/sass.png" alt="Sass logo">
-                        </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">JavaScript</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/js.png" alt="JavaScript logo">
                     </div>
-                    </li>
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">Tailwind</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/tailwind.png" alt="Tailwind logo">
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">Bootstrap</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/bootstrap.png" alt="Bootstrap logo">
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <ul class="skills-list">    
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">Python</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/python.png" alt="python logo">
-                            </div>
-                        </div>
-                    </li>
+                  </div>
+                </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Mongo DB</div>
-                        <div class="card-icon">
-                        <img src="assets/images/languages/mongo.png" alt="Mongo logo">
-                        </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Angular</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/angular.png" alt="Angular logo">
                     </div>
-                    </li>
+                  </div>
+                </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">MySQL</div>
-                        <div class="card-icon">
-                        <img src="assets/images/languages/mysql.png" alt="MySQL logo">
-                        </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">TypeScript</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/ts.png" alt="TypeScript logo">
                     </div>
-                    </li>
+                  </div>
+                </li>
     
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">NodeJS</div>
-                        <div class="card-icon">
-                        <img src="assets/images/languages/node.png" alt="Node logo">
-                        </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Bootstrap</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/bootstrap.png" alt="Bootstrap logo">
                     </div>
-                    </li>
-        
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Git</div>
-                        <div class="card-icon">
-                        <img src="assets/images/languages/git.png" alt="Git logo">
-                        </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">In progress</div>
+                    <div class="card-icon learn">
+                      <img src="assets/images/languages/sass.png" alt="SASS logo">
                     </div>
-                    </li>
+                  </div>
+                </li>
+    
+                <!-- <li>
+                  <div class="skill-card">
+                    <div class="tooltip">In progress</div>
+                    <div class="card-icon learn">
+                      <img src="assets/images/languages/tailwind.png" alt="Tailwind logo">
+                    </div>
+                  </div>
+                </li> -->
 
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">npm</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/npm.png" alt="npm logo">
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="skill-card">
-                            <div class="tooltip">vs code</div>
-                            <div class="card-icon">
-                            <img src="assets/images/languages/vscode.png" alt="vs code logo">
-                            </div>
-                        </div>
-                    </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">In progress</div>
+                    <div class="card-icon learn">
+                      <img src="assets/images/languages/python.png" alt="Python logo">
+                    </div>
+                  </div>
+                </li>
     
-                </ul>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Mongo DB</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/mongo.png" alt="Mongo logo">
+                    </div>
+                  </div>
+                </li>
     
-                </div>
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">MySQL</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/mysql.png" alt="MySQL logo">
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">NodeJS</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/node.png" alt="Node logo">
+                    </div>
+                  </div>
+                </li>
+    
+              </ul>
+    
+              <ul class="tools-list">
+                
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Figma</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/figma.png" alt="Figma logo">
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Git</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/git.png" alt="Git logo">
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">GitHub</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/github.png" alt="GitHub logo">
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">Npm</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/npm.png" alt="Npm logo">
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="skill-card">
+                    <div class="tooltip">VS Code</div>
+                    <div class="card-icon">
+                      <img src="assets/images/languages/vscode.png" alt="VS Code logo">
+                    </div>
+                  </div>
+                </li>
+    
+              </ul>
+    
+            </div>
             </div>
         </section>
 
-        <section class="section tab-content" data-tab-content="extra">
-
-            <div class="cards">
-
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="assets/images/extra-1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="card-text">
-                            Debo mi nombre a la diosa lunar <span>Selene</span>, la encargada de no dejar que la oscuridad consumiera a los mortales cuando su hermano Helios se ocultaba en el horizonte.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="assets/images/extra-2.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="card-text">
-                            Crecí en una casa con una puerta secreta, ahora vivo en un ático con mi marido, mi hija, y una dragona de la suerte que se parece sospechosamente a un gato.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="assets/images/extra-3.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="card-text">
-                            Me encanta leer libros provistos de personajes fuertes, mundos ficticios e historias increíbles.
-                            <br><br>
-                            Actualmente estoy leyendo <span>No lo haré bien</span>, de <span>Emma Vallespinós</span>.
-                        </p>
-                    </div>
-                </div>
-            
+        <!-- INFO -->
+        <section class="section info">
+            <div class="container grid">
+              <!-- <p class="section-subtitle">
+                Soft skills
+              </p> -->
+              <h2 class="h2 section-title">3 puntos clave</h2>
             </div>
-
+                <div class="info-container">
+                    <div class="info-box">
+                        <div class="info-content">
+                            <h3>prepocesadores css</h3>
+                            <p class="section-text">
+                                Opino que <span>el código que escribimos no solo tiene que ser fácil de modificar, testear y escalar, sino que debe ser fácil de leer de forma natural</span>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <h3>open source</h3>
+                            <p class="section-text">
+                                Soy una apasionada de <span>la accesibilidad web</span> y <span>el diseño responsive</span>, por lo que estoy mejorando mis competencias en <span>Sass</span> y <span>Less</span>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-content">
+                            <h3>clean code</h3>
+                            <p class="section-text">
+                                Me encanta la cooperación y el trabajo en equipo. Por lo que me gustaría comenzar a <span>contribuir en proyectos de código abierto</span> para <span>generar y aportar valor para la comunidad web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     </main>
@@ -497,7 +342,6 @@
   
     <!-- custom js link -->
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/tab.js"></script>
 
     <!-- ionicon link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

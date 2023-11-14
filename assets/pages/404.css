@@ -46,37 +46,34 @@ h1{
   color: var(--font-color);
   margin: 0;
   margin-top: 10px;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
 .wrapper-2 p{
-  margin:0;
+  margin: 0;
   font-size: 1.2em;
   font-style: italic;
   color: var(--font-color);
   font-family: var(--body-font);
-  letter-spacing:1px;
+  letter-spacing: 1px;
   line-height: 1.5;
 }
 
 .text a{
-  color: var(--font-color);
-  font-weight: var(--font-semibold);
+  color: var(--primary-color);
   transition: 0.3s;
 }
 
 .text a:hover{
-  color: var(--font-color);
-  background-color: #A5EDC4;
+  color: var(--background);
+  background-color: var(--primary-color);
   text-decoration: none;
-  transition: 0.3s;
+  opacity: 1;
 }
 
 @media (min-width:360px){
 
-  h1{
-    font-size:4.5em;
-  }
+  h1{ font-size:4.5em;}
 
 }
 
@@ -92,6 +89,5 @@ h1{
   margin:0 auto;
   margin-top:50px;
   }
-  
   
 }

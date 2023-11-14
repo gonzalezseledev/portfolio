@@ -1,0 +1,149 @@
+/* Vídeo de Luna Lovegood de Pexels: https://bit.ly/3r35WP1 */
+
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100dvh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  background: var(--background);
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2{
+  font-size: 5em;
+  font-weight: 800;
+  color: var(--font-color);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3{
+  font-size: 4em;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+.text p{
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 20px 0;
+  font-weight: var(--font-medium);
+  max-width: 700px;
+  animation: typing 7s steps(30) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid var(--font-color);
+}
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 30ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.text .row__text{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.row__text a{
+  display: inline-block;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--background);
+  letter-spacing: 2px;
+  transition: 0.2s;
+  font-family: var(--body-font);
+  border-radius: 4px;
+}
+
+.row__text a span{
+  color: var(--primary-color);
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 15px;
+  margin-left: 5px;
+}
+
+.text a:hover{
+  letter-spacing: 6px;
+  color: var(--background);
+  border: 2px solid var(--primary-color);
+}
+
+
+/* MEDIAQUERIES */
+
+@media (max-width: 1200px){
+  
+  .text h2{
+    font-size: 3em;
+  }
+
+  .text h3{
+    font-size: 2.5em;
+  }
+
+  .text p{
+    font-size: 1em;
+  }
+}
+

@@ -90,13 +90,17 @@
     padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
     outline: none;
     font-family: var(--body-font);
-    color:var(--font-color-light);
+    color: var(--font-color-light);
     font-size: 0.95rem;
     border-radius: 4px;
     border: 1px solid var(--background-light);
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    box-shadow: var(--shadow);
     transition: 0.3s;
 }
+
+.contact__input:hover {
+    border: 1px solid #3c3c3c;
+  }
 
 .input__wrap label{
     position: absolute;
@@ -137,8 +141,8 @@ textarea.contact__input ~ .icon{
 
 .input__wrap.focus .contact__input{
     background-color: var(--background-card);
-    border: 2px solid #111111;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    border: 1px solid #3c3c3c;
+    box-shadow: var(--shadow);
 }
 
 .input__wrap.focus label{
@@ -156,13 +160,13 @@ textarea.contact__input ~ .icon{
 }
 
 .input-btn{
-    color: var(--background);
+    color: var(--font-color-light);
     display: inline-block;
     padding: 1.1rem 2rem;
     border-radius: 4px;
     border: 1px solid var(--background-light);
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    background-color: var(--background-card);
     font-weight: var(--font-medium);
     font-size: var(--h3-font-size);
     cursor: pointer;
@@ -171,7 +175,7 @@ textarea.contact__input ~ .icon{
 
 .input-btn:hover{
     color: var(--font-color);
-    background-color: var(--background-card);
+    border: 1px solid #3c3c3c;
 }
 
 .right{
