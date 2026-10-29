@@ -80,3 +80,16 @@ function pageLoaded() {
 }
 
 document.onload = pageLoaded();
+
+
+/*** ----------------- ***/
+
+/** AÑO DINÁMICO **/ 
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+});
+
+
+/** TRADUCCIÓN DE IDIOMA **/
+

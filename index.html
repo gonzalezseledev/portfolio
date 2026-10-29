@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selene González | Backend &amp; ERP Systems Developer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
@@ -280,7 +275,8 @@
                     Si estás ampliando tu equipo de desarrollo o necesitas personal especializado en entornos ERP y
                     backend, estaré encantada de escuchar tu propuesta.
                     Puedes enviarme un mensaje a través del formulario o escribirme a:
-                    <a href="mailto:gonzalezseledev@gmail.com" class="contact-email">gonzalezseledev@gmail.com</a>.
+                    <a href="mailto:gonzalezseledev@gmail.com"
+                        class="contact-email"><span>gonzalezseledev@gmail.com</span></a>.
                 </p>
 
                 <form class="contact-form" action="https://formsubmit.co/921fa4632604820a1caa764ee57745cd"
@@ -325,15 +321,28 @@
 
             <footer class="footer">
                 <p class="copyright">
-                    Hecho con ♡ desde Madrid ©
-                    <a href="https://www.linkedin.com/in/gonzalezseledev/">gonzalezseledev</a> 2026
+                    Hecho con
+                    <svg class="heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    desde Madrid para el mundo ©
+                    <a href="https://www.linkedin.com/in/gonzalezseledev/">gonzalezseledev</a>
+                    <span id="year"></span>
                 </p>
             </footer>
 
         </main>
     </div>
 
+    <!-- Botón para volver arriba -->
+
+    <button class="lotus-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Volver arriba">
+        <img src="assets/images/flor-de-loto.png" width="70" height="70" alt="">
+    </button>
+
     <!-- JS para resaltar nav link activo según scroll -->
+
     <script>
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.navbar-link');
