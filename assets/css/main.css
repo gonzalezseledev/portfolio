@@ -5,14 +5,23 @@
 /* VARIABLES CSS */
 
 :root {
-  --primary-color: #5EC4C8;
+  /* --primary-color: #5EC4C8;
   --background: #11171e;
   --background-light: #212121;
   --background-lightest: #28272C;
   --background-card: #161b22;
   --font-color: #e2e8f0;
   --font-color-light: #94a3b8;
-  --font-color-lightest: #f8fafc;
+  --font-color-lightest: #f8fafc; */
+
+  --primary-color: #7f73e3;
+  --background: #100e18;
+  --background-light: #1a1726;
+  --background-lightest: #28233a;
+  --background-card: #151220;
+  --font-color: #e9e6f2;
+  --font-color-light: #aaa5b9;
+  --font-color-lightest: #fbfaff;
 
   --body-font: 'Inter', sans-serif;
   --display-font: 'Syne', sans-serif;
@@ -69,11 +78,20 @@ textarea {
   font-weight: var(--font-normal);
 }
 
-body {
+/* body {
   background-color: var(--background);
   color: var(--font-color-light);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+} */
+
+body {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(rgba(127, 115, 227, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 115, 227, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-attachment: fixed;
 }
 
 h1,
@@ -118,11 +136,12 @@ span {
 }
 
 ::selection {
-  background: #5ec4c8;
+  background: #7f73e3;
   color: var(--background);
 }
 
 /* REUSABLE */
+
 .container {
   padding-inline: 24px;
 }
@@ -183,7 +202,7 @@ span {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #2d3748;
+  background-color: #7f73e3;
   border-radius: 4px;
 }
 
@@ -297,6 +316,27 @@ span {
   line-height: 1.6;
   max-width: 260px;
   margin-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title svg {
+  flex-shrink: 0;
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* NAVBAR dentro del sidebar */
@@ -603,7 +643,7 @@ span {
 }
 
 .info-box:hover {
-  border-color: rgba(94, 196, 200, 0.3);
+  border-color: rgba(127, 115, 227, 0.3);
 }
 
 .info-box h3 {
@@ -638,7 +678,7 @@ span {
 }
 
 .project-card:hover {
-  border-color: rgba(94, 196, 200, 0.3);
+  border-color: rgba(127, 115, 227, 0.3);
   transform: translateX(4px);
 }
 
@@ -705,6 +745,35 @@ span {
   color: var(--font-color-light);
   letter-spacing: 0.03em;
 }
+
+/* ── ICONOS DE PROYECTOS ── */
+
+.project-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  background: rgba(127, 115, 227, 0.08);
+  border: 1px solid rgba(127, 115, 227, 0.16);
+
+  color: var(--primary-color);
+  font-size: 1.65rem;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-card:hover .project-icon {
+  background: rgba(127, 115, 227, 0.14);
+  border-color: rgba(127, 115, 227, 0.4);
+  transform: translateY(-2px);
+}F
 
 /* ── CONTACTO ── */
 
@@ -864,6 +933,6 @@ span {
 }
 
 .form-submit:hover {
-  background-color: rgba(94, 196, 200, 0.12);
+  background-color: rgba(127, 115, 227, 0.12);
   color: var(--font-color);
 }
