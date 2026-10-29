@@ -313,7 +313,7 @@ span {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 96px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
   }
 
   /* CONTENIDO DERECHO — scroll */
@@ -321,7 +321,7 @@ span {
   .right-content {
     flex: 1;
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 32px;
     max-width: 580px;
   }
 }
@@ -580,7 +580,7 @@ span {
 
 .right-content .section {
   padding-block: 60px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .right-content .section:first-child {
@@ -838,7 +838,8 @@ F
 /* ─── FOOTER ─── */
 
 .footer {
-  padding-block: 40px;
+  padding-top: 32px;
+  padding-block: 0px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
