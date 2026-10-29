@@ -840,7 +840,7 @@ F
 .footer {
   padding-top: 32px;
   padding-block: 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .copyright {
