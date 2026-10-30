@@ -163,6 +163,10 @@ span {
   padding-block: 60px;
 }
 
+section[id] {
+  scroll-margin-top: 96px;
+}
+
 .section-title {
   font-family: var(--display-font);
   font-size: 0.75rem;
@@ -253,19 +257,15 @@ span {
 /* ─── BOTÓN VOLVER ARRIBA ─── */
 
 .lotus-btn {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  width: 64px;
-  height: 64px;
   background: none;
   border: none;
   color: var(--primary-color);
   cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 0;
+  margin-top: 24px;
   animation: lotus-float 3s ease-in-out infinite;
 }
 
@@ -284,6 +284,22 @@ span {
   50% {
     transform: translateY(-8px);
   }
+}
+
+.lotus-footer-mobile {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  animation: lotus-float 3s ease-in-out infinite;
+}
+
+.lotus-footer-mobile:hover {
+  animation: none;
+  transform: translateY(-4px);
 }
 
 /* ─── LAYOUT PRINCIPAL (dos columnas) ─── */
@@ -314,6 +330,10 @@ span {
     justify-content: space-between;
     padding-top: 96px;
     padding-bottom: 32px;
+  }
+
+  .left-sidebar .social-list {
+    margin-top: 32px;
   }
 
   /* CONTENIDO DERECHO — scroll */
@@ -811,7 +831,6 @@ span {
   transform: translateY(-2px);
 }
 
-F
 /* ── CONTACTO ── */
 
 .contact-email {
@@ -894,9 +913,17 @@ F
   }
 }
 
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 /* ─── RESPONSIVE MÓVIL ─── */
 
 @media (max-width: 1023px) {
+
   .layout-container {
     padding: 0 24px;
     flex-direction: column;
@@ -912,6 +939,15 @@ F
 
   .left-sidebar .intro-desc {
     max-width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .social-list {
+    margin-top: 16px;
+    margin-bottom: 0;
   }
 
   .navbar-list {
@@ -930,12 +966,27 @@ F
     display: none;
   }
 
-}
+  .hero::before {
+    content: "About";
+    display: block;
+    font-family: var(--display-font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--font-color);
+    margin-bottom: 24px;
+  }
 
-@media (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
   .lotus-btn {
     display: none;
   }
+
 }
 
 @media (max-width: 576px) {

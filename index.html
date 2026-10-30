@@ -65,22 +65,23 @@
                         <li><a href="#contact" class="navbar-link">Contacto</a></li>
                     </ul>
                 </nav>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/gonzalezseledev/" class="social-link" target="_blank"
+                            aria-label="LinkedIn">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gonzalezseledev" class="social-link" target="_blank"
+                            aria-label="GitHub">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <ul class="social-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/gonzalezseledev/" class="social-link" target="_blank"
-                        aria-label="LinkedIn">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/gonzalezseledev" class="social-link" target="_blank"
-                        aria-label="GitHub">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-            </ul>
         </header>
 
         <!-- COLUMNA DERECHA (scroll) -->
@@ -325,26 +326,31 @@
             </section>
 
             <footer class="footer">
-                <p class="copyright">
-                    Hecho con
-                    <svg class="heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                    </svg>
-                    desde Madrid para el mundo ©
-                    <a href="https://www.linkedin.com/in/gonzalezseledev/">gonzalezseledev</a>
-                    <span id="year"></span>
-                </p>
+                <div class="footer-inner">
+                    <p class="copyright">
+                        Hecho con
+                        <svg class="heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        desde Madrid ©
+                        <a href="https://www.linkedin.com/in/gonzalezseledev/">gonzalezseledev</a>
+                        <span id="year"></span>
+                    </p>
+
+                    <button class="lotus-footer-mobile" onclick="window.scrollTo({top:0, behavior:'smooth'})"
+                        aria-label="Volver arriba">
+                        <svg viewBox="0 0 626 626" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <g transform="translate(0,626) scale(0.1,-0.1)" fill="currentColor" stroke="none">
+                                <img src="assets/images/flor-de-loto.png" width="70" height="70" alt="Volver arriba">
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </footer>
 
         </main>
     </div>
-
-    <!-- Botón para volver arriba -->
-
-    <button class="lotus-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Volver arriba">
-        <img src="assets/images/flor-de-loto.png" width="70" height="70" alt="">
-    </button>
 
     <!-- JS para resaltar nav link activo según scroll -->
 
