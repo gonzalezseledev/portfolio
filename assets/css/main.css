@@ -951,6 +951,62 @@ section[id]:not(#about) {
   gap: 16px;
 }
 
+/* THANKS PAGE */
+
+.thanks-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.thanks-card {
+  background-color: var(--background-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-8);
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: var(--shadow);
+}
+
+.thanks-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.thanks-card .form-submit {
+  margin-inline: auto;
+}
+
+/* Animación flotante para el sobre */
+.float {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ─── 404 PAGE ─── */
+
+
+
 /* ─── RESPONSIVE MÓVIL ─── */
 
 @media (max-width: 1023px) {
